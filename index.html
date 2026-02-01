@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Snake</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="score-board">
+                <div class="score-box">Score: <span id="scoreText">0</span></div>
+                <div class="score-box">Best: <span id="highScoreText">0</span></div>
+            </div>
+            
+            <div class="theme-switch-wrapper">
+                <span class="theme-label">Dark Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div id="gameContainer">
+            <canvas id="gameBoard" width="500" height="500"></canvas>
+            
+            <div id="levelContainer">
+                <button class="levelBtn" id="easyBtn">Easy</button>
+                <button class="levelBtn active" id="mediumBtn">Medium</button>
+                <button class="levelBtn" id="hardBtn">Hard</button>
+            </div>
+
+            <div class="controls-area">
+                <button id="resetBtn">Reset Game</button>
+                <p class="instruction">Press <strong>SPACE</strong> to Pause</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
